@@ -27,9 +27,122 @@ h6 {
 
 .logo {
   color: #CF2D2D;
+  font-weight: 700;
 
 }
 
 .stroke {
   border-color: #B0BABF;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 40px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  width: max-content;
+  height: 40px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 500px;
+  border: 1px solid #B0BABF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.searchBar input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.25rem;
+  width: 500px;
+}
+
+.searchBar input[type="text"]:focus {
+  outline: none;
+  border: none;
+  border-radius: unset;
+  padding: unset;
+  width: unset;
+}
+
+
+.infoBar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-icon,
+.favoriteBar,
+.signInBtn,
+.location-icon {
+  color: #B0BABF;
+}
+
+.favoriteBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signInBtn {
+  border: 1px solid #B0BABF;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  margin: 0 60px 10px 60px;
+}
+
+.location-icon {
+  margin-right: 10px;
+}
+
+.location-marker {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.sub-header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.sub-header-links a {
+  color: #B0BABF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.banner-header {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  color: white;
+  font-size: xxx-large;
+  font-weight: bold;
 }
