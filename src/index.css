@@ -134,15 +134,49 @@ h6 {
   text-transform: capitalize;
 }
 
+/* To display banner text over the image
+
+
+ */
+
 .banner-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.banner-text {
+  margin-top: 150px;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-text-main {
+  padding: 0 150px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.banner-text-submain {
+  padding: 0 250px;
+  text-align: center;
+}
+
+.bannerImg {
+  width: 100%;
+}
+
+.eventImg {
+  width: 250px;
+}
+
+.recommended-card {
   position: relative;
 }
 
-.banner-header {
+.eventContent {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  color: white;
-  font-size: xxx-large;
-  font-weight: bold;
+  display: flex;
+  justify-content: end;
 }
