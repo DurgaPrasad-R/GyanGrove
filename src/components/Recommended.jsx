@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { HiLocationMarker } from "react-icons/hi";
+import Spinner from "./Spinner";
 const Recommended = () => {
   const [recommended, setRecommended] = useState([]);
   useEffect(() => {
@@ -14,13 +16,19 @@ const Recommended = () => {
     setRecommended(data.events);
   }
 
+  // function to format date in the form of "Month Date,Year"
+  const formattedDate = (date) => {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(date).toLocaleDateString("en-US", options);
+  };
+
   return (
-    <div>
-      <h1>
-        Recommended Shows <FaArrowRightLong />
-      </h1>
+    <div className="recommendedSection">
+      <p className="heading" style={{color:"white"}}>
+        Recommended shows <FaArrowRightLong />
+      </p>
       <div className="recommended-container">
-        {recommended ? (
+        {recommended.length > 0 ? (
           recommended.map((event) => {
             const url = event.imgUrl;
             const startIndex = url.indexOf("/d/") + 3;
@@ -29,25 +37,36 @@ const Recommended = () => {
             const newUrl = `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
             return (
               <div key={event.eventName} className="recommended-card">
-                <div className="eventContent">
-                  <p className="eventName">{event.eventName}</p>
-                  <p className="eventCity">{event.cityName}</p>
-                  <p className="eventDate">{event.date}</p>
-                  <p className="eventWeather">{event.weather}</p>
-                  <p className="eventDist">{event.distanceKm / 100}</p>
-                </div>
-                <div className="eventImg">
+                <div className="eventImgContainer">
                   <img
                     src={newUrl}
                     alt={event.eventName}
                     className="eventImg"
                   />
+                  <div className="eventContent">
+                    <div className="city-weatherPack">
+                      <p className="eventName">{event.eventName}</p>
+                      <p className="eventDate">{formattedDate(event.date)}</p>
+                    </div>
+                    <div className="city-weatherPack">
+                      <p className="eventCity">
+                        <HiLocationMarker />
+                        {event.cityName}
+                      </p>
+                      <div className="weather-dist">
+                        <p className="eventWeather">{event.weather}</p>|
+                        <p className="eventDist">
+                          {parseInt(event.distanceKm / 100)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             );
           })
         ) : (
-          <h1>Loading...</h1>
+          <Spinner />
         )}
       </div>
     </div>

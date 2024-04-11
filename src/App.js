@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import SubHeader from "./components/SubHeader";
 import Banner from "./components/Banner";
-import Recommended from "./components/Recommended";
+import Upcoming from "./components/Upcoming";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <SubHeader />
       <Banner />
-      <Recommended />
+      <Upcoming />
     </div>
   );
 };
