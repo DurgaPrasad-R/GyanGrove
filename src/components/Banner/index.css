@@ -1,0 +1,32 @@
+.banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.banner-text {
+    margin-top: 150px;
+    height: 100%;
+    position: absolute;
+}
+
+.banner-text-main {
+    padding: 0 150px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.banner-text-submain {
+    padding: 0 250px;
+    text-align: center;
+}
+
+.bannerImg {
+    width: 100%;
+}
+
+.banner-recommended {
+    position: relative;
+    width: 100%;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import { MdMenu } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";

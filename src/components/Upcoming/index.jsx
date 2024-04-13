@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-
-import Spinner from "./Spinner";
+import "./index.css";
+import Spinner from "../Spinner";
 
 const Upcoming = () => {
   const [upComing, setupComing] = useState([]);
@@ -38,9 +38,16 @@ const Upcoming = () => {
 
   return (
     <div className="upComingSection">
-      <p className="heading">
-        Upcoming events <FaArrowRightLong />
-      </p>
+      <div className="seeMore">
+        <p className="heading">
+          Upcoming events <FaArrowRightLong />
+        </p>
+        <p>
+          <a href="#seeall" className="seeMoreLink">
+            See all
+          </a>
+        </p>
+      </div>
       <div className="upcoming-container">
         {upComing.length > 0 ? (
           upComing.map((event, index) => {
@@ -88,12 +95,19 @@ const Upcoming = () => {
             <Spinner />
           ) : (
             <button onClick={loadMore} className="load-more">
-              Load more
+              Click me to Load More Events
             </button>
           )}
         </div>
       ) : (
-        <p style={{textAlign:"center"}}>No more UpComing events</p>
+        <p
+          style={{
+            textAlign: "center",
+            fontWeight: "600",
+          }}
+        >
+          No more UpComing events
+        </p>
       )}
     </div>
   );

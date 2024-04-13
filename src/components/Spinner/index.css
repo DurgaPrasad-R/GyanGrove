@@ -1,0 +1,9 @@
+.spinnerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.spinner {
+    width: 100px;
+}

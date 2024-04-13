@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const SubHeader = () => {

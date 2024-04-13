@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HiLocationMarker } from "react-icons/hi";
-import Spinner from "./Spinner";
+import "./index.css";
+import Spinner from "../Spinner";
 const Recommended = () => {
   const [recommended, setRecommended] = useState([]);
   useEffect(() => {
@@ -24,9 +25,16 @@ const Recommended = () => {
 
   return (
     <div className="recommendedSection">
-      <p className="heading" style={{color:"white"}}>
-        Recommended shows <FaArrowRightLong />
-      </p>
+      <div className="seeMore">
+        <p className="heading" style={{ color: "white" }}>
+          Recommended events <FaArrowRightLong />
+        </p>
+        <p className="seeMoreLink">
+          <a href="#seeall" style={{ color: "white" }}>
+            See all
+          </a>
+        </p>
+      </div>
       <div className="recommended-container">
         {recommended.length > 0 ? (
           recommended.map((event) => {

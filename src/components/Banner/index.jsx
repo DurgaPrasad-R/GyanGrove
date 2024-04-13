@@ -1,6 +1,7 @@
 import React from "react";
-import Recommended from "./Recommended";
-import banner from "../assets/Banner.svg";
+import "./index.css";
+import Recommended from "../Recommended";
+import banner from "../../assets/Banner.svg";
 const Banner = () => {
   return (
     <div className="banner-recommended">

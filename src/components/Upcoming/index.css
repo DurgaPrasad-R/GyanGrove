@@ -1,0 +1,112 @@
+.upComingSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.upcoming-card {
+    border: 1px solid #B0BABF;
+    border-radius: 5px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+
+.upComingImgContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.upComingeventImg {
+    width: 100%;
+    display: block;
+}
+
+.upComingeventDateContainer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 5px; */
+}
+
+.upComingContent {
+    padding: 10px;
+    font-size: 0.75rem;
+}
+
+.upComingeventName {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.upComingeventDate {
+    color: white;
+    padding: 5px;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.upComingeventDist,
+.upComingeventWeather,
+.upComingeventCity {
+    color: #989090;
+}
+
+.weather-dist {
+    display: flex;
+    gap: 2px;
+}
+
+.city-weatherPack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upComingeventImg {
+    width: 250px;
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+}
+
+.load-more:hover {
+    background-color: #1E2022;
+    color: white;
+}
+
+.load-more:hover {
+    cursor: pointer;
+}
+
+.seeMore {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.seeMoreLink {
+    margin-right: 250px;
+    color: #1E2022;
+}
