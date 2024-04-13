@@ -30,3 +30,28 @@
     position: relative;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .banner-text-main {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .banner-text-submain {
+        padding: 0 50px;
+    }
+
+    .banner-text {
+        margin-top: 100px;
+    }
+
+    /* style the .bannerImg based on its height not bbased on width*/
+    .bannerImg {
+        width: fit-content;
+    }
+
+    
+
+
+
+}
