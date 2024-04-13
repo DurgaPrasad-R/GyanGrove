@@ -69,3 +69,39 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.small-search-icon {
+    display: none;
+}
+
+/* CSS for smaller devices*/
+@media screen and (max-width: 430px) {
+    .searchBar {
+        display: none;
+        border: none;
+        width: max-content;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .signInBtn {
+        display: none;
+    }
+
+    .fav {
+        display: none;
+    }
+
+    .small-search-icon {
+        display: block;
+    }
+
+    .utility {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B0BABF;
+    }
+}
