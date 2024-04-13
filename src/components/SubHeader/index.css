@@ -38,7 +38,15 @@
 
     .sub-header-links {
         overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
+
+    .sub-header-links::-webkit-scrollbar {
+        display: none;
+    }
+
+
 
 
 }
