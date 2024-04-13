@@ -1,7 +1,7 @@
 .sub-header {
     display: flex;
     align-items: center;
-    margin: 0 60px 10px 60px;
+    padding: 0 60px 10px 60px;
 }
 
 .location-icon {
@@ -23,4 +23,22 @@
     color: #B0BABF;
     text-decoration: none;
     text-transform: capitalize;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 430px) {
+    .sub-header {
+        font-size: 0.75rem;
+        display: block;
+    }
+
+    .location-icon {
+        margin: 0px;
+    }
+
+    .sub-header-links {
+        overflow-x: auto;
+    }
+
+
 }

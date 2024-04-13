@@ -74,8 +74,16 @@
     display: none;
 }
 
+.utility {
+    display: none;
+}
+
 /* CSS for smaller devices*/
 @media screen and (max-width: 430px) {
+    .mainHeader {
+        padding: 20px 20px 0 20px;
+    }
+
     .searchBar {
         display: none;
         border: none;
