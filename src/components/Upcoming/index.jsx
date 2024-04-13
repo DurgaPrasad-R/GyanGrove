@@ -42,7 +42,7 @@ const Upcoming = () => {
         <p className="heading">
           Upcoming events <FaArrowRightLong />
         </p>
-        <p>
+        <p className="seeMoreLink">
           <a href="#seeall" className="seeMoreLink">
             See all
           </a>
