@@ -88,3 +88,24 @@
 .recommended-card {
     margin-right: 10px;
 }
+
+.seeMore {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.seeMoreLink {
+    margin-right: 250px;
+    color: #1E2022;
+}
+
+@media screen and (max-width: 430px) {
+    .recommendedSection {
+        margin-left: 50px;
+    }
+
+    .seeMore {
+        white-space: nowrap;
+    }
+}
