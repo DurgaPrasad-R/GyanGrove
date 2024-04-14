@@ -40,6 +40,7 @@ The website should now be running locally on your machine, allowing you to explo
 
 ## Folder Structure
 
+```
 - node_modules
 - public
 - src
@@ -50,5 +51,38 @@ The website should now be running locally on your machine, allowing you to explo
 - package-lock.json
 - package.json
 - README.md
+```
 
-### Components
+## Components
+
+Each component is structured to be a folder which consists of an index.jsx file and a index.css file. Each of these components enhances functionality and modularity. This project makes use of the following components:
+
+1. <b>Header</b> - It consists of a logo, a search bar and a signIn button.
+2. <b>SubHeader</b> - It consists of the navigation links and the location marker.
+3. <b>Banner</b> - It renders the banner image and the demo text is displayed over the banner image
+4. <b>Recommended</b> - It renders recommended events in a horizontal carousel.
+5. <b>Upcoming</b> - It renders a list of upcoming events vertically
+6. <b>Spinner</b> - A spinner(loader) is used to mention that upcoming events are being retrieved page by page.
+
+## Design and Technical Decisions
+
+### Responsive Design
+
+The Website works well both for the Desktop and Mobile versions. Media Queries and flexible layouts are utilized to achieve responsiveness.
+
+### API Integration
+
+Event data is fetched from the provided REST APIs. The `fetch` API is used to make HTTP requests and retrieve the event information. The data is effectively parsed and displayed on the website.
+
+### Horizontal Scrolling
+
+Recommended events are displayed in a horizontal scrolling container, allowing users to browse through a curated selection effortlessly. CSS flexbox is used to implement the horizontal scrolling functionality.
+
+### Font and Color
+
+The Inter font is used throughout the website to maintain consistency and readability. Specified color schemes (#1E2022 for headings, #989090 for subtitles, #ffffff for background, #CF2D2D for logo, #B0BABF for stroke/border) are applied to ensure a cohesive design.
+
+### Live Site and Repository
+
+Live Site: https://gyan-grove-frontend.netlify.app/
+Repository Link: https://github.com/DurgaPrasad-R/GyanGrove
