@@ -100,14 +100,13 @@
     cursor: pointer;
 }
 
-/* .seeMore {
+.seeMore {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-}*/
+}
 
 .seeMoreLink {
-    margin-right: 250px;
     color: #1E2022;
     width: fit-content;
 }
@@ -115,5 +114,10 @@
 @media screen and (max-width: 430px) {
     .upComingSection {
         margin-left: 50px;
+        margin-top: 0px;
+    }
+
+    .seeMoreLink {
+        margin-right: 0px;
     }
 }
