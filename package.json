@@ -18,6 +18,15 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "DurgaPrasad-R",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DurgaPrasad-R/GyanGrove.git#main"
+  },
+  "bugs": {
+    "url": "https://github.com/DurgaPrasad-R/GyanGrove/issues"
+  },
+  "homepage": "https://github.com/DurgaPrasad-R/GyanGrove/tree/main#readme",
   "eslintConfig": {
     "extends": [
       "react-app",
